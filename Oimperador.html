@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>O Imperador</title>
+      <h1>O Imperador</h1>
+  </head>
+  <body>
+  <input type="number" id="codDeslo" placeholder="Digite a Chave"/><br/>
+  <input type="text" id="Msg" placeholder="Digite o texto"/><br />
+  <input type="submit" id="btn_cifra" value="Cifrar" />
+  <input type="submit" id="btn_descifra" value="Descifrar" />
+
+<div id="resposta"></div>
+
+</div>
+  <script>
+    //Cifra (codigodaletra + deslo)%tamanhodoalfabeto
+     //Descirfa ((codigoasc - deslo) %tamanhodoalfabeto + codigodaletra)
+     let chave=parseInt(document.getElementById("codDeslo").value);
+      let btn_cifra=document.getElementById("btn_cifra");
+        btn_cifra.addEventListener("click",function (){
+          let Mensagem=document.getElementById("Msg").value;
+            Mensagem.split(" ");
+              //for(let i=0; i<Mensagem.length;i++){
+                 //Mensagem.charCodeArt(0);
+              //document.getElementById("resposta").innerHTML+= message;
+              console.log(Mensagem);
+          });
+  </script>
+  </body>
+</html>
